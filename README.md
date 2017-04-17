@@ -12,3 +12,5 @@ Contents are-
 3.seg4.cpp-Parallel implementation of Boruvka's algorithm for image segmentation (much slower due to locks).
 
 4.hist_seg.cpp-Parallel implementation of histogram thresholding method for image segmentation.
+
+5.imgcmp.cpp- A program to compare two images. The output is a completely black image if the images are similar else at each point of difference there will be white color.
