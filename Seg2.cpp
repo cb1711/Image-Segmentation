@@ -1,3 +1,5 @@
+//Serialized implementation for image segmentation using Boruvka's algorithm
+
 #include <iostream>
 #include <omp.h>
 #include <opencv/cv.h>
