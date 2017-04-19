@@ -14,3 +14,5 @@ Contents are-
 4.hist_seg.cpp-Parallel implementation of histogram thresholding method for image segmentation.
 
 5.imgcmp.cpp- A program to compare two images. The output is a completely black image if the images are similar else at each point of difference there will be white color.
+
+6.otsu.cpp- Serialized implementation of Otsu's method for image segmentation.
