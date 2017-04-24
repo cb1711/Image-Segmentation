@@ -3,6 +3,7 @@
 Contains C++ codes for image segmentation i.e. dividing image into segments which are similar.
 
 Libraries used are openCV(for reading and saving image) and openMP(for parallelizing the program)
+
 Contents are-
 
 1. seg.cpp- Parallel implementation of Boruvka's algorithm for image segmentation (Faster).
