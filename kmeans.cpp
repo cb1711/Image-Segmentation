@@ -24,7 +24,7 @@ typedef struct Node node;
 int main()
 {
     ll N,M;
-    string img="1.png";
+    string img="kmeans.png";
     Mat image,pq;
     image=imread(img);
     pq=imread(img);
