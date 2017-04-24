@@ -18,4 +18,4 @@ Contents are-
 
 6. otsu.cpp- Serialized implementation of Otsu's method for image segmentation.
 
-7. kmeans.cpp- 
+7. kmeans.cpp- Serialized implementation of K-means clustering algorithm for image segmentation.
