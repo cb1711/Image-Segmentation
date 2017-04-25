@@ -24,7 +24,7 @@ typedef struct Node node;
 int main()
 {
     ll N,M;
-    string img="kmeans.png";
+    string img="kmeans.jpg";
     Mat image,pq;
     image=imread(img);
     pq=imread(img);
@@ -54,14 +54,14 @@ int main()
     srand(time(0));
     vector<pii > cluster(K),temp(K);
     vi c(K);
-    vector<node> color(K);
+    //vector<node> color(K);
     rep(i,K) cluster[i]=mp(rand()%N,rand()%M);
-    rep(i,K)
+    /*rep(i,K)
     {
         color[i].r=rand()%255;
         color[i].g=rand()%255;
         color[i].b=rand()%255;
-    }
+    }*/
     while(ss--)
     {
         cout<<ss<<endl;
@@ -105,9 +105,9 @@ int main()
             rep(j,M)
             {
                 ll k=mat[i][j].se;
-                pq.at<Vec3b>(i,j)[0]=color[k].b;
-                pq.at<Vec3b>(i,j)[1]=color[k].g;
-                pq.at<Vec3b>(i,j)[2]=color[k].r;
+                pq.at<Vec3b>(i,j)[0]=image.at<Vec3b>(cluster[k].fi,cluster[k].se)[0];
+                pq.at<Vec3b>(i,j)[1]=image.at<Vec3b>(cluster[k].fi,cluster[k].se)[1];
+                pq.at<Vec3b>(i,j)[2]=image.at<Vec3b>(cluster[k].fi,cluster[k].se)[2];
             }
         }
     }
