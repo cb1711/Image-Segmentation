@@ -1,5 +1,8 @@
 //Serialized implementation for image segmentation using Boruvka's algorithm
 
+// Boruvka's Algorithm is a greedy algorithm for finding a minimum spanning tree in a connected graph
+
+
 #include <iostream>
 #include <omp.h>
 #include <opencv/cv.h>
@@ -7,6 +10,8 @@
 #include <vector>
 using namespace std;
 using namespace cv;
+
+// Structure containing coordinates of any point
 struct pixel{
     int x;
     int y;
@@ -14,6 +19,8 @@ struct pixel{
 bool use=false;
 typedef struct un un;
 typedef struct pixel pixel;
+
+// Structure defining an edge with the two end points and weight of the edge
 struct edge{
     float weigh;
     pixel node1;
